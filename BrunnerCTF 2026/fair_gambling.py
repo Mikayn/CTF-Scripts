@@ -9,7 +9,7 @@ you can pre-check every offered hash for free and only ever spin on hashes
 that resolve to a winning triplet
 
 Usage:
-    python3 automator.py wss://TARGET_HOST:PORT/ws
+    python3 fair_gambling.py wss://TARGET_HOST:PORT/ws
 """
 
 import asyncio
@@ -38,7 +38,7 @@ def is_win(combo):
 
 async def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 automator.py wss://host:port/ws")
+        print("Usage: python3 fair_gambling.py wss://host:port/ws")
         return
     url = sys.argv[1]
 
