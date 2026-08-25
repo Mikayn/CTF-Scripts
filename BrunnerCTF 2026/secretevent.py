@@ -75,9 +75,11 @@ if __name__ == "__main__":
     secret = "secret" 
 
     payload = {
-    "user": "Mikayn",
-    "role": "commissioner"
-    }
+    "sub": "Mikayn",
+    "name": "Mikayn",
+    "role": "user",
+    "iat": 1787659321369
+}
 
     token = sign_jwt(payload, secret)
     print("Token:", token)
