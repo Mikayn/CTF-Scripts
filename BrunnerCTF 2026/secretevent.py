@@ -77,7 +77,7 @@ if __name__ == "__main__":
     payload = {
     "sub": "Mikayn",
     "name": "Mikayn",
-    "role": "user",
+    "role": "admin",
     "iat": 1787659321369
 }
 
